@@ -1,15 +1,15 @@
 
-$(function () {
-            $('#note').bind("click", function () {
-                $('html, body').animate({ scrollTop: $(document).height() }, 1200);
-                document.getElementById("NotesText").focus();
-                return false;
-            });
-            $('#scrollToTop').bind("click", function () {
-                $('html, body').animate({ scrollTop: 0 }, 1200);
-                return false;
-            });
-        });
+//$(function () {
+//            $('#note').bind("click", function () {
+//                $('html, body').animate({ scrollTop: $(document).height() }, 1200);
+//                document.getElementById("NotesText").focus();
+//                return false;
+//            });
+//            $('#scrollToTop').bind("click", function () {
+//                $('html, body').animate({ scrollTop: 0 }, 1200);
+//                return false;
+//            });
+//        });
 function Add(){
     
     var add= document.getElementById("NotesText").value;
