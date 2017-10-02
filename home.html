@@ -1,0 +1,101 @@
+<html lang="eng">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/normal.css">
+    <link rel="stylesheet" type="text/css" href="css/grid.css">
+    <link rel="stylesheet" type="text/css" href="css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="css/styleindex.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <title></title>
+    
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); 
+}
+</script>
+    </head>
+    <body>
+        <header>
+            <nav >
+            <div class="row">
+                <img src="images/logo.png" class="logo" alt="omnifoodlogo">
+                <ul class="main-nav">
+                <li><a href="#">Home</a> </li>
+                    <li><a href="#">About Us</a> </li>
+                    <li><a href="#">Sign Up</a> </li>
+                </ul>
+                </div>
+            </nav>
+        <div class="hero-text-box">
+            <h1>you're welcome. your's every dey Task <br> <span>GET STARTED!</span> </h1>
+            <a class="btn btn-full" href="#" id="note">ToDay Task </a>
+            
+        </div>
+        
+        </header>
+        
+        <section id="notes" class="section-notes">
+            
+            <div class="row">
+                <div class="form col span-2-of-3">
+                    <h2>Take Notes</h2>
+                    <div class="row">
+                    <div class="form col span-1-of-3">
+                      <label>Notes</label>
+                      <input id="NotesText" value="" type="text" required>
+                    </div>
+                    <div class="form col span-1-of-4">
+                     <label>Status</label>
+                     <select id="status">
+                      <option value="1">High</option>
+                      <option value="2">Medium</option>
+                      <option value="3">Low</option>
+                    </select>
+                    </div>
+                    <div class="form col span-1-of-3">
+                      <button id="Add" class="btn-add" onclick="Add()">Add</button>
+                    </div>
+                    </div>
+                <div class="row">
+                    <table id="table" class="blueTable">
+                     <tr>
+                         <th style="width: 70%">Notes</th>
+                         <th>Status</th>
+<!--                         <th>Update</th>-->
+                         <th>Delete</th>
+                     </tr>
+                  
+                 </table>
+                <label>Total Notes:</label>
+                <input type="text" id="count" value="">
+                </div>
+                </div>
+                
+                <div class="col span-1-of-4">
+                    <div class="slide-img">
+                   
+                    <img id="slide-img1" class="slide " src="images/img1.jpg" />
+                    <img class="slide " src="images/img2.jpg" />
+                    <img class="slide " src="images/img3.png" />
+                    <img class="slide " src="images/img4.jpg" />
+                    <span class="prev" onclick="plusSlides(-1)">&laquo;</span>
+                    <span class="next" onclick="plusSlides(1)">&raquo;</span>
+                    </div>
+                </div>
+            </div>
+        </section>    
+    </body>
+</html>    
