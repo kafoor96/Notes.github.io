@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Home</title>
+	
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<script src="js/script.js"></script>
+	<script src="js/style.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <header>
+      <div class="org">
+      <div class="logo">
+          <img  src="images/logo.png">
+      </div>
+       <div class="name">
+           <h2>Arts and Science College</h2><br>
+        <h4>'A' Grade Acadamy 2008-2016</h4>
+       </div>
+        
+      </div>
+            <div class="menu-div">
+            <nav class="menu">
+                <ul>
+                    <li><a href="#">HOME</a> </li>
+                    <li><a href="#">GALLERY</a> 
+                       <ul>
+                       <li><a href="#">Images</a></li>
+                       <li><a href="#">Videos</a></li> 
+                       </ul>
+                    </li>
+                    <li><a href="#">DEPARTMENT</a> 
+                        <ul>
+                       <li><a href="#">Sports</a></li>
+                       <li><a href="#">BA</a></li> 
+                       <li><a href="#">B.sc</a></li> 
+                       </ul>
+                     </li>
+                    <li><a href="#">TIMIMG</a> 
+                         <ul>
+                       <li><a href="#">Regular</a></li>
+                       <li><a href="#">Self</a></li> 
+                       </ul>
+                     </li>
+                    <li><a href="#">ABOUT US</a> </li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        
+
+    <div class="content-body">
+        
+        
+    <div class="slide-img">
+       <span class="prev" onclick="plusSlides(-1)">&laquo;</span>
+        <span class="next" onclick="plusSlides(1)">&raquo;</span>
+        <img id="slide-img1" class="slide " src="images/img1.jpg" />
+        <img class="slide " src="images/img2.jpg" />
+        <img class="slide " src="images/img3.png" />
+        <img class="slide " src="images/img4.jpg" />
+    </div>
+        <div class="latest">
+        <h2>Latest </h2>
+         <marquee height="300px" scrollamount="5" direction="up" loop="true" onmouseover="this.stop()" onmouseout="this.start()">
+             <div class="latest-msg">
+              <h3>Gallery</h3>
+              <p>Sfounded by the Muslim minority community, is committed to provide quality higher education to all<a href="#">Read More..</a></p>
+          </div>
+          <div class="latest-msg">
+              <h3>Department</h3>
+              <p>especially the Muslims, both men and women and other deprived, disadvantaged, underprivileged<a href="#">Read More..</a></p>
+          </div>
+          <div class="latest-msg">
+              <h3>Timing</h3>
+              <p>especially the Muslims, both men and women and other deprived, disadvantaged, underprivilege.<a href="#">Read More..</a></p>
+          </div>
+          <div class="latest-msg">
+              <h3>About</h3>
+              <p>especially the Muslims, both men and women and other deprived, dised<a href="#">Read More..</a></p>
+          </div>
+         </marquee>
+          
+         
+        </div>
+        <div class="Notes">
+                <label>Notes</label>
+                 <input id="NotesText" value="" type="text">
+                 <label>Status</label>
+                 <select id="status">
+                  <option value="1">High</option>
+                  <option value="2">Medium</option>
+                  <option value="3">Low</option>
+                </select>
+
+
+                 <button id="Add" onclick="Add()">Add</button>
+
+                 <table id="table" class="blueTable">
+                     <tr>
+                         <th style="width: 70%">Notes</th>
+                         <th>Status</th>
+                         <th>Update</th>
+                         <th>Delete</th>
+                     </tr>
+
+                 </table>
+                 <div>
+                <label>Total Notes:</label>
+                <input type="text" id="count" value="">
+                <label>High:</label>
+                <input type="text" id="high" value="">
+                <label>Medium:</label>
+                <input type="text" id="medium" value="">
+                <label>Low:</label>
+                <input type="text" id="low" value="">
+                    </div>
+            </div>
+    
+    </div>
+<script src="javascript/style.js"></script>   
+</body>
+</html>
